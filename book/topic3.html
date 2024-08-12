@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        In Python, loops are used to execute a block of code repeatedly. Python provides two main types of loops: for loops and while loops. Here's an overview of how to use these loops in Python:
+
+for Loop:
+The for loop is used to iterate over a sequence (such as a list, tuple, string, or range) and execute a block of code for each item in the sequence.
+
+Example using a list:
+
+python
+Copy code
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+Example using a range:
+
+python
+Copy code
+for i in range(5):
+    print(i)
+while Loop:
+The while loop is used to repeatedly execute a block of code as long as a specified condition is true.
+
+Example:
+
+python
+Copy code
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+Loop Control Statements:
+Python provides several loop control statements to modify the flow of loops:
+
+break: Terminates the loop prematurely when a certain condition is met.
+continue: Skips the current iteration and continues to the next iteration of the loop.
+else: An optional else block can be used with a for or while loop. The code in the else block is executed when the loop completes normally (i.e., without encountering a break statement).
+Example with break:
+
+python
+Copy code
+for i in range(5):
+    if i == 3:
+        break
+    print(i)
+Example with continue:
+
+python
+Copy code
+for i in range(5):
+    if i == 3:
+        continue
+    print(i)
+Example with else (for loop):
+
+python
+Copy code
+for i in range(5):
+    print(i)
+else:
+    print("Loop completed without a break statement.")
+Nested Loops:
+You can nest one loop inside another to create more complex looping structures.
+
+Example of nested for loops:
+
+python
+Copy code
+for i in range(3):
+    for j in range(3):
+        print(i, j)
+Example of nested while loops:
+
+python
+Copy code
+i = 1
+while i <= 3:
+    j = 1
+    while j <= 3:
+        print(i, j)
+        j += 1
+    i += 1
+Python's loop constructs are fundamental for iterating over data, performing repetitive tasks, and controlling the flow of your programs. They are essential tools for building complex algorithms and solving various programming problems.
+    </pre>
+</body>
+</html>
